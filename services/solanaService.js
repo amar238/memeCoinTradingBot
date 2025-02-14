@@ -1,5 +1,5 @@
 const { Connection, Keypair } = require('@solana/web3.js');
-const logger = require('./logger');
+const logger = require('../utils/logger');
 
 const connection = new Connection("https://api.mainnet-beta.solana.com");
 

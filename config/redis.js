@@ -1,5 +1,5 @@
 const Redis = require('ioredis');
-const logger = require('./logger');
+const logger = require('../utils/logger');
 
 const redis = new Redis({
     host: process.env.REDIS_HOST

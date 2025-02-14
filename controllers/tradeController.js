@@ -1,7 +1,7 @@
-const { connection, keypair } = require('./solana');
+const { connection, keypair } = require('../services/solanaService');
 const { getBestTrade } = require('./jupiterService');
 const { Transaction } = require('@solana/web3.js');
-const logger = require('./logger');
+const logger = require('../utils/logger');
 
 exports.executeTrade = async (req, res) => {
     try {
